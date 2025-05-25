@@ -15,6 +15,7 @@ import type {
 } from "convex/server";
 import type * as auth from "../auth.js";
 import type * as http from "../http.js";
+import type * as migrations from "../migrations.js";
 import type * as router from "../router.js";
 import type * as routes from "../routes.js";
 import type * as travel_apis from "../travel_apis.js";
@@ -30,6 +31,7 @@ import type * as travel_apis from "../travel_apis.js";
 declare const fullApi: ApiFromModules<{
   auth: typeof auth;
   http: typeof http;
+  migrations: typeof migrations;
   router: typeof router;
   routes: typeof routes;
   travel_apis: typeof travel_apis;
